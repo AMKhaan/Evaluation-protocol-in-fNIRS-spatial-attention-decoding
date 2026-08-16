@@ -16,7 +16,7 @@ points**:
 
 Chance is 33.3%. Protocol D's 79% is not a measurement of attention: an oracle trained to
 predict *which optode a window came from* scores 100% on the same samples. Protocols B–D are
-instances of the leakage taxonomy in Kapoor & Narayanan (2023) — illegitimate features [L2]
+instances of the leakage taxonomy in Kapoor & Narayanan (2023): illegitimate features [L2]
 and train/test non-independence [L3.2].
 
 ## What the honest protocols give

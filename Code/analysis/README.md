@@ -10,7 +10,7 @@ dataset usable at all.
 
 ## The onset reconstruction
 
-ds004830 as distributed carries no usable trial timing — the BIDS `events.tsv` files are
+ds004830 as distributed carries no usable trial timing: the BIDS `events.tsv` files are
 empty and the Homer `.nirs` stimulus matrix `s` is identically zero. Onsets are reconstructed
 from the PsychToolbox logs as
 
@@ -40,7 +40,7 @@ the reported numbers were produced on:
 ## Running it
 
 Download ds004830, then point the pipeline at its **derivatives** tree (the Homer and
-PsychToolbox layer — the raw BIDS layer is not read at all):
+PsychToolbox layer; the raw BIDS layer is not read at all):
 
 ```bash
 python run_all.py --quick --root /path/to/ds004830/derivatives   # verifies the install
@@ -55,7 +55,7 @@ the table have been corrected to the measured values.
 
 `--quick` runs the identical code path with reduced permutation counts and 3 training
 epochs. It is a smoke test, not a cheap version of the result: its numbers are noisy and
-should not be quoted. It is also not especially quick — it shortens only the five stages
+should not be quoted. It is also not especially quick: it shortens only the five stages
 that take a permutation or epoch count, and the remaining eight cost about 98 minutes
 between them regardless. Run `python run_all.py --list` for the per-stage breakdown, which
 marks the stages `--quick` affects.
@@ -97,7 +97,7 @@ Two figures are rendered from accuracies written into the plotting script as lit
 than recomputed at plot time: `fig_ablation.py` (Figure 3) and `fig_subjects.py` (Figure 4).
 This is so a figure can be restyled without repeating a benchmark that takes an hour. Each
 script names, in its docstring, the stage whose output its literals came from, and that stage
-is part of the full run — so the values are checkable, but they are not automatically
+is part of the full run, so the values are checkable, but they are not automatically
 re-derived. If you re-run the benchmarks and get different numbers, update those literals.
 
 `fig_pipeline.py` (Figure 1) is a schematic and computes nothing at all.
@@ -107,7 +107,7 @@ re-derived. If you re-run the benchmarks and get different numbers, update those
 No path is hard-coded. `paths.py` resolves locations in this order: an explicit flag, then
 the `DS004830_ROOT` / `DS004830_DATA` / `DS004830_NULL` environment variables, then a
 location relative to the repository. `run_all.py` sets those variables for its children,
-which is how `validate_alignment.py` — which has no command line — ends up looking at the
+which is how `validate_alignment.py`, which has no command line, ends up looking at the
 same data as everything else.
 
 ## A caution about protocol D
