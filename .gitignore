@@ -1,0 +1,16 @@
+# The dataset itself is never redistributed here. Download ds004830 from OpenNeuro
+# and point DS004830_ROOT at its derivatives tree; see Code/analysis/README.md.
+Dataset/
+
+# Derived epoch tensors (~30 MB each). Rebuilt by `run_all.py --stage build`
+# in about six minutes, so there is no reason to version them.
+Code/analysis/data/
+Code/analysis/data_null/
+
+__pycache__/
+*.pyc
+*.pdf
+.claude/
+
+# Duplicate of logs/time-resolved-perm.log, left behind by an early run.
+Code/analysis/time_resolved_perm.log
