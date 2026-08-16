@@ -1,7 +1,7 @@
 # Evaluation protocol in fNIRS spatial-attention decoding (ds004830)
 
-Code and results for a paper about how the choice of train/test split — not the model, the
-features or the data — drives the accuracy an fNIRS decoding study reports.
+Code and results for a paper about how the choice of train/test split, not the model, the
+features or the data, drives the accuracy an fNIRS decoding study reports.
 
 Holding the data, features and classifier fixed and changing only how samples are split into
 training and test sets moves three-class accuracy on this dataset by **46.6 percentage
@@ -32,7 +32,7 @@ Under protocol A, on the 907 behaviourally correct trials from 12 subjects:
 Within-subject decoding is real but modest. Cross-subject transfer is not established: the
 permutation test that respects the design gives p = 0.083, and a one-sample t-test across
 subject means gives p = 0.028 on the *same numbers*. Which test you choose decides the
-answer — which is the paper's point, turned on our own results.
+answer, which is the paper's point, turned on our own results.
 
 Seven deep architectures (HemoNet, CNN+BiLSTM, Transformer, CNN+TemporalAttn, TCN,
 InceptionTime, GRU+Attention) all land between 32.4% and 33.8% under leave-one-subject-out.
@@ -47,7 +47,7 @@ Onsets are reconstructed from the PsychToolbox logs as `t_onset(i) = startT + Tr
 
 The reconstruction is validated three ways: against a shuffled-onset control, by a global lag
 sweep (the evoked response is sharpest at lag 0), and by reproducing Ning et al.'s published
-per-subject behavioural accuracies — all twelve match exactly.
+per-subject behavioural accuracies, all twelve match exactly.
 
 ## Layout
 
@@ -68,12 +68,12 @@ python run_all.py         --root /path/to/ds004830/derivatives   # ~9 h on 8 cor
 ```
 
 Requirements, per-stage runtimes, the flags, and the table mapping each paper element to the
-script that produced it are in [`Code/analysis/README.md`](Code/analysis/README.md) — including
+script that produced it are in [`Code/analysis/README.md`](Code/analysis/README.md), including
 a caution about `leakage_demo.py`, which deliberately reproduces the leaky protocol D and is
 there to be measured, not reused.
 
 ## Licence
 
-Released under the **MIT Licence** — see [`LICENSE`](LICENSE). You may reuse, modify and
+Released under the **MIT Licence**, see [`LICENSE`](LICENSE). You may reuse, modify and
 redistribute this code, including commercially, provided the copyright notice is retained. The
 dataset itself is not covered by this licence; ds004830 carries its own terms on OpenNeuro.
