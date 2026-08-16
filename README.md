@@ -47,7 +47,7 @@ Onsets are reconstructed from the PsychToolbox logs as `t_onset(i) = startT + Tr
 
 The reconstruction is validated three ways: against a shuffled-onset control, by a global lag
 sweep (the evoked response is sharpest at lag 0), and by reproducing Ning et al.'s published
-per-subject behavioural accuracies, all twelve match exactly.
+per-subject behavioural accuracies; all twelve match exactly.
 
 ## Layout
 
@@ -74,6 +74,6 @@ there to be measured, not reused.
 
 ## Licence
 
-Released under the **MIT Licence**, see [`LICENSE`](LICENSE). You may reuse, modify and
+Released under the **MIT Licence** (see [`LICENSE`](LICENSE)). You may reuse, modify and
 redistribute this code, including commercially, provided the copyright notice is retained. The
 dataset itself is not covered by this licence; ds004830 carries its own terms on OpenNeuro.
