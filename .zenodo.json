@@ -1,0 +1,43 @@
+{
+  "upload_type": "software",
+  "title": "Evaluation protocol, not model architecture, drives reported accuracy in fNIRS spatial-attention decoding: analysis code",
+  "description": "Analysis code for a secondary analysis of the public fNIRS dataset OpenNeuro ds004830 (three-class spatial attention under competing talkers, 12 participants). Holding data, features and classifiers fixed, the code evaluates four cross-validation protocols drawn from the published fNIRS literature and shows that the choice of train/test split alone moves three-class accuracy by 46.6 percentage points, from 32.72 percent under leave-one-subject-out cross-validation to 79.28 percent when channels are treated as independent samples. Also included is a reconstruction of the trial onsets, which are absent from the released BIDS events files, validated against a shuffled-onset control, a global lag sweep, and the original authors' published behavioural accuracies. The dataset itself is not redistributed here.",
+  "creators": [
+    {
+      "name": "Khan, Ahmad Muzaffar",
+      "affiliation": "National University of Computer and Emerging Sciences (FAST-NUCES), School of Computing, Department of Artificial Intelligence and Data Science, Lahore, Pakistan",
+      "orcid": "0009-0002-5943-8165"
+    },
+    {
+      "name": "Nasir, Bushra",
+      "affiliation": "National University of Computer and Emerging Sciences (FAST-NUCES), School of Computing, Department of Artificial Intelligence and Data Science, Lahore, Pakistan"
+    },
+    {
+      "name": "Zafar, Kashif",
+      "affiliation": "University of Management and Technology (UMT), School of Systems and Technology, Lahore, Pakistan",
+      "orcid": "0000-0001-8139-2269"
+    }
+  ],
+  "license": "MIT",
+  "access_right": "open",
+  "language": "eng",
+  "keywords": [
+    "functional near-infrared spectroscopy",
+    "fNIRS",
+    "brain-computer interface",
+    "spatial attention",
+    "data leakage",
+    "cross-validation",
+    "evaluation protocol",
+    "reproducibility",
+    "machine learning"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://openneuro.org/datasets/ds004830",
+      "relation": "isDerivedFrom",
+      "resource_type": "dataset",
+      "scheme": "url"
+    }
+  ]
+}
