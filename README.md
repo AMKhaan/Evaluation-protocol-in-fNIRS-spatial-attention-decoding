@@ -57,8 +57,9 @@ Code/analysis/logs/  console output from the runs behind the reported numbers
 manuscript/          figures
 ```
 
-The dataset is **not** redistributed here. Download ds004830 from OpenNeuro and point
-`DS004830_ROOT` at its derivatives tree.
+The dataset is **not** redistributed here. Download it from
+[OpenNeuro ds004830](https://openneuro.org/datasets/ds004830) and point `DS004830_ROOT` at its
+derivatives tree.
 
 ```bash
 cd Code/analysis
