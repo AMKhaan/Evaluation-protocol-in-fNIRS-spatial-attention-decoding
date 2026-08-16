@@ -10,7 +10,3 @@ Code/analysis/data_null/
 __pycache__/
 *.pyc
 *.pdf
-.claude/
-
-# Duplicate of logs/time-resolved-perm.log, left behind by an early run.
-Code/analysis/time_resolved_perm.log
