@@ -71,3 +71,9 @@ Requirements, per-stage runtimes, the flags, and the table mapping each paper el
 script that produced it are in [`Code/analysis/README.md`](Code/analysis/README.md) — including
 a caution about `leakage_demo.py`, which deliberately reproduces the leaky protocol D and is
 there to be measured, not reused.
+
+## Licence
+
+Released under the **MIT Licence** — see [`LICENSE`](LICENSE). You may reuse, modify and
+redistribute this code, including commercially, provided the copyright notice is retained. The
+dataset itself is not covered by this licence; ds004830 carries its own terms on OpenNeuro.
